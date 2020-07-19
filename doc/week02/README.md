@@ -101,4 +101,8 @@ Allow anonymous read access 익명 사용자에게 읽기 권한을 준다.
 
 젠킨스가 점점 커지고 사용자가 많아지면서 관리가 어렵기 때문에 Project-based를 사용하기도 한다.
 
+- 실습 
+Matrix-based security 생성한 User에게 부여해보자.
+
+
 
