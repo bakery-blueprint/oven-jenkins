@@ -80,6 +80,22 @@ Allow users to sing up 옵션을 통해 스스로 가입가능
 3. People 페이지 확인
 
 
+### 권한
+
+- Anyone can do anything
+익명사용자, 사용자에게 어떤 권한권한 관련 제한하지 않는다. 
+
+- Legacy mode
+
+1.164 버전으로 동작한다. Admin 유저를 찾아 관리자 권한을 주고, 이외의 사용자는 익명 사용자로 취급된다. (구린 옵션)
+
+- Logged-in users can do anything
+
+로그인한 사용자는 관리자가 된다. default 옵션
+
+Allow anonymous read access 익명 사용자에게 읽기 권한을 준다.
+
+
 
 
 
