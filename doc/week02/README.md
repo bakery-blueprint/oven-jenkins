@@ -25,7 +25,7 @@ Available 탭에서 설치, Installed 탭에서 업데이트, 삭제할 수 있�
 
 Periodic.. 주기적인이라는 뜻
 
-- 실습 
+- *실습* 
 1. Periodic 설치
 2. Periodic Manager 이동
 3. 환경설정	
@@ -41,4 +41,4 @@ Periodic.. 주기적인이라는 뜻
  5. System.log를 통해 확인하자.
  6. Configure System에서 설정으 변경하고 백업해보자.
 
-
+### 젠킨스 업데이트
