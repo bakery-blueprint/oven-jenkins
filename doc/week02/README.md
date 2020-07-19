@@ -47,9 +47,20 @@ Periodic.. 주기적인이라는 뜻
 
 이하 생략
 
-### 사용자 관리 
+## 사용자 관리 
 
 인증과 권한은 중요하다.
+
+Configure Global Security Enable security을 끄면 url을 알고 있으면 젠킨스에 접속 가능
+
+오히려 이부분이 좋을 수도 있다.
+
+### 인증
+
+
+
+
+
 
 
 
