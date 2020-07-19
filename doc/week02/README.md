@@ -57,7 +57,27 @@ Configure Global Security Enable security을 끄면 url을 알고 있으면 젠�
 
 ### 인증
 
+- 서블릿 컨테이너 
+tomcat-user.xml에 설정한 사용자가 접근 가능하다.
 
+- 젠킨스 자체 DB
+Allow users to sing up 옵션을 통해 스스로 가입가능
+
+- LDAP
+가장 많이 사용하는 방식 중 하나이다. 
+
+
+- 실습 
+
+젠킨스 자체 DB 실습을 진행한다. 
+
+젠킨스 내부에 새로운 사용자 생성
+
+1. Manage Users 
+
+2. Create User
+
+3. 
 
 
 
