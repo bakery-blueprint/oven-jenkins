@@ -77,7 +77,7 @@ Allow users to sing up 옵션을 통해 스스로 가입가능
 
 2. Create User
 
-3. 
+3. People 페이지 확인
 
 
 
