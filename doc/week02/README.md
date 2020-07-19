@@ -95,7 +95,9 @@ Allow users to sing up 옵션을 통해 스스로 가입가능
 
 Allow anonymous read access 익명 사용자에게 읽기 권한을 준다.
 
+- Matrix-based security
 
+각 사용자에게 권한 설정을 Custom하게 한다. 많이 사용하는 방식
 
 
 
