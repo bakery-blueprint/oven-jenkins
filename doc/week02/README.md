@@ -99,6 +99,6 @@ Allow anonymous read access 익명 사용자에게 읽기 권한을 준다.
 
 각 사용자에게 권한 설정을 Custom하게 한다. 많이 사용하는 방식
 
-
+젠킨스가 점점 커지고 사용자가 많아지면서 관리가 어렵기 때문에 Project-based를 사용하기도 한다.
 
 
