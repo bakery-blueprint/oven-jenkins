@@ -28,7 +28,7 @@ Periodic.. 주기적인이라는 뜻
 - 실습 
 1. Periodic 설치
 2. Periodic Manager 이동
-3. 	
+3. 환경설정	
  - Temporary Directory : 임시 경로 ex) boot target 경로
  - Backup schedule (cron) : 백업 스케줄
  cron 사진
@@ -37,8 +37,8 @@ Periodic.. 주기적인이라는 뜻
  - File Management Strategy : ConfigOnly는 젠킨스 홈의 xml과 모든 Job의 xml, 즉 설정만 저장한다. 반면 FullBackup은 전부 저장한다.
  - Backup Location : 백업 공간 설정
   먼저 디렉토리를 생성하자. sudo docker exec -it jenkins_prod mkdir /var/jenkins_home/backup
- 4. Backup Now! 눌러 백업해보자.
- 
- 
+ 4. Backup Now! 눌러 백업해보자. (시간이 상당히 오래걸림)
+ 5. System.log를 통해 확인하자.
+ 6. Configure System에서 설정으 변경하고 백업해보자.
 
 
