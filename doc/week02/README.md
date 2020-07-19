@@ -7,9 +7,9 @@
 Available 탭에서 설치, Installed 탭에서 업데이트, 삭제할 수 있다. 
 
 - 수작업으로 젠킨스 플러그인 설치하기 (실습)
-  1. http://updates.jenkins-ci.org/download/plugins/
-  2. logstatsh 다운로드 
-  3. 플러그인에 의존성이 존재할 경우 다른 플러그인을 먼저 설치해야 한다. 
+1. http://updates.jenkins-ci.org/download/plugins/
+2. logstatsh 다운로드 
+3. 플러그인에 의존성이 존재할 경우 다른 플러그인을 먼저 설치해야 한다. 
   
   
 ## 젠킨스 백업과 복원
@@ -21,5 +21,21 @@ Available 탭에서 설치, Installed 탭에서 업데이트, 삭제할 수 있�
 젠킨스 설정 자체가 설치 환경에 따라 경로가 정해져 있다. (리눅스의 경우 /var/lib/jenkins)
 
 
-  
+### Periodic Backup 플러그인
+
+Periodic.. 주기적인이라는 뜻
+
+- 실습 
+1. Periodic 설치
+2. Periodic Manager 이동
+3. 	
+ - Temporary Directory : 임시 경로 ex) boot target 경로
+ - Backup schedule (cron) : 백업 스케줄
+ cron 사진
+ - Maximum backups in location : 백업 개수
+ - Store no older than (days) : 보관 날짜
+ - File Management Strategy : ConfigOnly는 젠킨스 홈의 xml과 모든 Job의 xml, 즉 설정만 저장한다. 반면 FullBackup은 전부 저장한다.
+ 
+ 
+
 
