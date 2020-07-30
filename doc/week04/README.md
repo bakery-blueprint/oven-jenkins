@@ -16,7 +16,7 @@
 - 단위테스트를 위한 스텐드얼론 젠킨스 슬레이브
 - 통합 테스르를 위한 스탠드얼론 젠킨스 슬레이브
 
- ![oven](/doc/img/agent_distri_build_test1.png)
+ ![oven](/doc/img/agent_distri_build_test1.jpg)
  
  단위 테스트 슬레이브
  1. 단위 테스트 (1-50)
@@ -36,7 +36,7 @@
  1. 빌드와 단위 테스트를 위한 도커 이미지
  2. 통합 테스트를 위한 도커 이미지
  
- ![oven](/doc/img/agent_distri_build_test2.png)
+ ![oven](/doc/img/agent_distri_build_test2.jpg)
  
  ## 실습 시간
  ### 젠킨스 노드 관리 페이지
