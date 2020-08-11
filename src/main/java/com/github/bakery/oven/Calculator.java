@@ -2,7 +2,7 @@ package com.github.bakery.oven;
 
 public class Calculator {
     public long add(int a, int b) {
-        return a + b;
+        return (long) a + b;
     }
 
     public int sub(int a, int b) {
@@ -10,7 +10,7 @@ public class Calculator {
     }
 
     public long mul(int a, int b) {
-        return a * b;
+        return (long) a * b;
     }
 
     public int div(int a, int b) {

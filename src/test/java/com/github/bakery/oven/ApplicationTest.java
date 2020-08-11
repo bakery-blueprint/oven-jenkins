@@ -13,6 +13,8 @@ class ApplicationTest {
 
     @Test
     void main() {
-        Application.main(new String[]{"hello"});
+        // when then
+        Application.main(new String[] { "hello" });
+        // no assert
     }
 }
