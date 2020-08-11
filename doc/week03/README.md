@@ -31,9 +31,6 @@ Periodic.. 주기적인이라는 뜻
 3. 환경설정	
  - Temporary Directory : 임시 경로 ex) boot target 경로
  - Backup schedule (cron) : 백업 
- 
-![oven](/doc/img/cron.png)
-
  - Maximum backups in location : 백업 개수
  - Store no older than (days) : 보관 날짜
  - File Management Strategy : ConfigOnly는 젠킨스 홈의 xml과 모든 Job의 xml, 즉 설정만 저장한다. 반면 FullBackup은 전부 저장한다.
