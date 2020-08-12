@@ -1,5 +1,7 @@
 # 7장 젠킨스를 이용한 CI
 
+https://github.com/nikhilpathania/hello-world-greeting
+
 ### 브랜치 전략
 - master
 - develop (mainline)
