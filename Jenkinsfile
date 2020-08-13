@@ -1,4 +1,4 @@
-node('node') {
+node('master') {
   stage('Poll') {
     checkout scm
      echo "Poll"
