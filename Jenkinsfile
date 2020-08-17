@@ -21,9 +21,9 @@ node('master') {
     withMaven(maven: 'M3') {
         sh 'mvn clean verify -Dsurefire.skip=true';
     }
-    junit '**/target/failsafe-reports/TEST-*.xml'
+    junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
-    echo "SIntegration Test"
+    echo "Integration Test"
   }
   stage('Publish'){
     def server = Artifactory.server 'Default Artifactory server'
