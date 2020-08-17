@@ -25,20 +25,6 @@ node('master') {
     archive 'target/*.jar'
     echo "Integration Test"
   }
-  stage('Publish'){
-    def server = Artifactory.server 'Default Artifactory server'
-    def uploadSpec = """ {
-        "file" : [
-            {
-                "pattern": "target/oven.0.0.1-SNAPSHOT.jar"
-                "target": "oven/${$BUILD_NUMBER}/"
-                "props": "Integration-Tested=Yes;Performance-Tested=No"
-            }
-        ]
-    }"""
-    echo "Publish"
-    server.upload(uploadSpec)
-  }
 }
 
 
