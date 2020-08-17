@@ -5,7 +5,7 @@ node('master') {
   }
   stage('Build & Unit test') {
     withMaven(maven: 'M3') {
-        sh 'mvn clean surefire:test';
+        sh 'mvn clean test-compile surefire:test';
     }
     junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
@@ -19,9 +19,9 @@ node('master') {
   }
   stage('Integration Test') {
     withMaven(maven: 'M3') {
-        sh 'mvn clean failsafe:integration-test';
+        sh 'mvn clean test-compile failsafe:integration-test';
     }
-    junit '**/target/surefire-reports/TEST-*.xml'
+    junit '**/target/failsafe-reports/TEST-*.xml'
     archive 'target/*.jar'
     echo "Integration Test"
   }
