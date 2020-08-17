@@ -5,7 +5,7 @@ node('master') {
   }
   stage('Build & Unit test') {
     withMaven(maven: 'M3') {
-        sh 'mvn clean verify -DskipIts=true';
+        sh 'mvn clean surefire:test';
     }
     junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
@@ -19,7 +19,7 @@ node('master') {
   }
   stage('Integration Test') {
     withMaven(maven: 'M3') {
-        sh 'mvn clean verify -Dsurefire.skip=true';
+        sh 'mvn clean failsafe:integration-test';
     }
     junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
