@@ -23,3 +23,15 @@ https://github.com/nikhilpathania/hello-world-greeting
 ### Publish
 
 Default Artifactory server : 젠킨스에 설치된 아티팩토리 서버 명칭이다. 
+
+
+## Sonarqube 설치
+
+brew 진행
+
+1. brew install sonar
+
+2. brew install sonar-scanner
+
+3. sonar console
+
