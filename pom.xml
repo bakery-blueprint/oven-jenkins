@@ -77,28 +77,9 @@
 							<goal>integration-test</goal>
 							<goal>verify</goal>
 						</goals>
-						<configuration>
-							<testSourceDirectory>src/integrationTest/java</testSourceDirectory>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<executions>
-					<execution>
-						<goals>
-							<goal>test</goal>
-						</goals>
-						<configuration>
-							<skipTests>true</skipTests>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
 
 			<!--			<plugin>-->
 			<!--				<groupId>org.codehaus.mojo</groupId>-->
