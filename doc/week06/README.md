@@ -20,9 +20,17 @@ https://github.com/nikhilpathania/hello-world-greeting
 ### Integration Test
 - Dsurefire.skip=true : 단위 테스트를 건너뛰고 통합 테스트만 수행한다.
 
+
+http://maven.apache.org/surefire/maven-failsafe-plugin/index.html
+https://blog.sonatype.com/2009/06/integration-tests-with-maven-part-1-failsafe-plugin/
+
+
 ### Publish
 
 Default Artifactory server : 젠킨스에 설치된 아티팩토리 서버 명칭이다. 
+
+
+Publish 모드는 제외 
 
 
 ## Sonarqube 설치
