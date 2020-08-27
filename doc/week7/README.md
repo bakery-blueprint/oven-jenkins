@@ -23,6 +23,10 @@ CI가 통합, 개발 기능 브랜치에서 수행되는 반면에 CD 는 통합
 // ubuntu 이미지 및 컨테이너 실행
 sudo docker run -i -t ubuntu /bin/bash 
 
+// jenkins 유저 생성
+# adduser jenkins
+# su jenkins
+$ exit
 
 //  OpenSHH 설치
 # apt-get update
