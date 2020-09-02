@@ -5,7 +5,7 @@ node('master') {
   }
   stage('Build & Unit test') {
     withMaven(maven: 'M3') {
-        sh 'mvn clean test-compile surefire:test';
+        sh 'mvn clean verify test-compile surefire:test';
     }
     junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
@@ -13,7 +13,7 @@ node('master') {
   }
   stage('Static Code Analysis') {
     withMaven(maven: 'M3') {
-        sh 'mvn clean verify sonar:sonar -Dsonar.host.url=http://61.79.201.98:9000 -Dsonar.projectName=oven -Dsonar.projectKey=oven -Dsonar.projectVersion=$BUILD_NUMBER'
+        sh 'mvn clean verify sonar:sonar -Dsonar.host.url=http://112.170.36.210:9000 -Dsonar.projectName=oven -Dsonar.projectKey=oven -Dsonar.projectVersion=$BUILD_NUMBER'
     }
     echo "Static Code Analysis"
   }
@@ -26,5 +26,14 @@ node('master') {
     echo "Integration Test"
   }
 }
-
+node('docker_pt') {
+  stage ('Start Tomcat'){
+    sh '''cd /home/jenkins/tomcat/bin
+    ./startup.sh''';
+  }
+  stage ('Deploy'){
+    unstash 'binary'
+    sh 'cp target/oven'
+  }
+}
 
