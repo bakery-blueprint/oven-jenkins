@@ -182,6 +182,7 @@ node {
     2. 각 스텔이지별 타임 out 설정
 ```
 // 선언적 파이프라인
+```
 pipeline {
     agent any
 
